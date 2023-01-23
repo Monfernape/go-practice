@@ -2,14 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"rsc.io/quote"
 )
 
 func main() {
-	fmt.Println("Hello")
-	fmt.Println(quote.Go())
-	fmt.Println(quote.Glass())
-	fmt.Println(quote.Hello())
-	fmt.Println(quote.Opt())
+	var conferenceName = "Go Conference"
+	fmt.Println("Welcome to our booking application conference called", conferenceName, ". Be sure to enjoy")
+
 }
