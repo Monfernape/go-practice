@@ -27,5 +27,6 @@ func main() {
 	// infering type
 	guestOfHonour := "M. Azeez"
 	fmt.Printf("Our guest of honor is %v", guestOfHonour)
+	fmt.Print("Nice")
 
 }
