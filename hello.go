@@ -28,4 +28,11 @@ func main() {
 	guestOfHonour := "M. Azeez"
 	fmt.Printf("Our guest of honor is %v", guestOfHonour)
 
+	var guestUser string
+
+	fmt.Print("Do you want to enter the conference as well? Add your name here")
+	fmt.Scan(&guestUser)
+
+	fmt.Printf("%v thank you. Your name has been registered", guestUser)
+
 }
