@@ -60,4 +60,10 @@ func main() {
 
 	fmt.Printf("My top %v favorite frameworks are %v", len(frameworks), frameworks)
 
+	// Slices: dynamic array
+
+	var friends []string
+
+	friends = append(friends, "Qasim")
+
 }
