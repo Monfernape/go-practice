@@ -35,17 +35,29 @@ func main() {
 
 	// Lets do some mathematics
 
-	var firstNumber int
-	var secondNumber int
+	// var firstNumber int
+	// var secondNumber int
 
-	fmt.Println("Hey, you wanna do some summation? Give me two numbers and I can add them for you")
-	fmt.Println("Enter first number ")
-	fmt.Scan(&firstNumber)
+	// fmt.Println("Hey, you wanna do some summation? Give me two numbers and I can add them for you")
+	// fmt.Println("Enter first number ")
+	// fmt.Scan(&firstNumber)
 
-	fmt.Println("Great, now the second one ")
-	fmt.Scan(&secondNumber)
+	// fmt.Println("Great, now the second one ")
+	// fmt.Scan(&secondNumber)
 
-	var total = firstNumber + secondNumber
-	fmt.Printf("These two numbers sum up to %v", total)
+	// var total = firstNumber + secondNumber
+	// fmt.Printf("These two numbers sum up to %v", total)
+
+	// Arrays
+	// var friends = [40]string{"Dan", "Rob", "Evan"}
+
+	// Array without initialization
+	var frameworks [3]string
+
+	frameworks[0] = "React"
+	frameworks[1] = "Angular"
+	frameworks[2] = "Vue"
+
+	fmt.Printf("My top %v favorite frameworks are %v", len(frameworks), frameworks)
 
 }
