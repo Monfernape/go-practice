@@ -52,18 +52,34 @@ func main() {
 	// var friends = [40]string{"Dan", "Rob", "Evan"}
 
 	// Array without initialization
-	var frameworks [3]string
+	// var frameworks [3]string
 
-	frameworks[0] = "React"
-	frameworks[1] = "Angular"
-	frameworks[2] = "Vue"
+	// frameworks[0] = "React"
+	// frameworks[1] = "Angular"
+	// frameworks[2] = "Vue"
 
-	fmt.Printf("My top %v favorite frameworks are %v", len(frameworks), frameworks)
+	// fmt.Printf("My top %v favorite frameworks are %v", len(frameworks), frameworks)
 
-	// Slices: dynamic array
+	// // Slices: dynamic array
 
-	var friends []string
+	// var friends []string
 
-	friends = append(friends, "Qasim")
+	// friends = append(friends, "Qasim")
+
+	// Todos List
+	var todos []string
+
+	for {
+		var todo string = ""
+
+		fmt.Println("Add a new task")
+
+		fmt.Scan(&todo)
+
+		todos = append(todos, todo)
+		todo = ""
+
+		fmt.Printf("Here's your current tasks list %v", todos)
+	}
 
 }
