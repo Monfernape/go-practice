@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	// const organizer = "Usman Khalil"
@@ -70,7 +73,7 @@ func main() {
 	var todos []string
 
 	for {
-		var todo string = ""
+		var todo string
 
 		fmt.Println("Add a new task")
 
@@ -79,7 +82,20 @@ func main() {
 		todos = append(todos, todo)
 		todo = ""
 
-		fmt.Printf("Here's your current tasks list %v", todos)
+		// fmt.Printf("Here's your current tasks list %v", todos)
+		firstCharactersOnly := []string{}
+		for _, todo := range todos {
+			var characters = strings.Fields(todo)
+			var firstCharacter = characters[0]
+			// fmt.Printf("Splitting %v", firstCharacter)
+			firstCharactersOnly = append(firstCharactersOnly, firstCharacter)
+		}
+		fmt.Printf("Here's first characters only %v \n", firstCharactersOnly)
+
+		if len(todos) == 5 {
+			fmt.Println("That's as many as tasks we can do in a day")
+			break
+		}
 	}
 
 }
