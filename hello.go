@@ -84,10 +84,10 @@ func main() {
 
 		// fmt.Printf("Here's your current tasks list %v", todos)
 		firstCharactersOnly := []string{}
-		for _, todo := range todos {
-			var characters = strings.Fields(todo)
+		for _, _todo := range todos {
+			var characters = strings.Fields(_todo)
 			var firstCharacter = characters[0]
-			// fmt.Printf("Splitting %v", firstCharacter)
+			fmt.Printf("Splitting %v and characters %v", firstCharacter, characters)
 			firstCharactersOnly = append(firstCharactersOnly, firstCharacter)
 		}
 		fmt.Printf("Here's first characters only %v \n", firstCharactersOnly)
@@ -95,6 +95,9 @@ func main() {
 		if len(todos) == 5 {
 			fmt.Println("That's as many as tasks we can do in a day")
 			break
+		} else {
+			var remainingTasksAllowed = 5 - len(todos)
+			fmt.Printf("Only %v new tasks can be added", remainingTasksAllowed)
 		}
 	}
 
